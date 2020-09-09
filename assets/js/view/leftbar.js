@@ -1,14 +1,14 @@
 let left_icons = {
-  "fa-pencil": { tooltip: "Edit" },
-  "fa-eraser": { tooltip: "Erase" },
-  "fa-refresh": { tooltip: "Clear" },
-  "fa-eyedropper": { tooltip: "Paint" },
-  "fa-th": { tooltip: "Grid" },
-  "fa-undo": { tooltip: "Undo" },
-  "fa-repeat": { tooltip: "Redo" },
-  "fa-floppy-o": { tooltip: "Save" },
-  "fa-download": { tooltip: "Download" },
-  "fa-question-circle": { tooltip: "Help" },
+  "fa-pencil": { tooltip: "Edit", data: "", modal: false },
+  "fa-eraser": { tooltip: "Erase", data: "", modal: false },
+  "fa-refresh": { tooltip: "Clear", data: "", modal: false },
+  "fa-eyedropper": { tooltip: "Paint", data: "", modal: false },
+  "fa-th": { tooltip: "Grid", data: "", modal: false },
+  "fa-undo": { tooltip: "Undo", data: "", modal: false },
+  "fa-repeat": { tooltip: "Redo", data: "", modal: false },
+  "fa-floppy-o": { tooltip: "Save", data: "", modal: false },
+  "fa-download": { tooltip: "Download", data: "", modal: false },
+  "fa-question-circle": { tooltip: "Help", data: "", modal: false },
 };
 let leftbar = document.querySelector("#leftbar");
 
@@ -20,7 +20,16 @@ icon_keys.forEach((key) => {
   let itag = document.createElement("i");
   itag.className = `fa ${key}`;
   li.appendChild(itag);
-  li.tooltip = left_icons[key].tooltip;
+  let tooltip = document.createElement("span");
+  tooltip.className = `tooltiptext`;
+  tooltip.innerHTML = left_icons[key].tooltip;
+  li.appendChild(tooltip);
+  li.className = "leftbar_icon";
+  // li.tooltip = left_icons[key].tooltip;
   ul.appendChild(li);
 });
 leftbar.appendChild(ul);
+leftbar.addEventListener("click", leftbarevents);
+function leftbarevents() {
+  console.log(event);
+}
