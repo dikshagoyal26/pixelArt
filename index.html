@@ -6,49 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Art</title>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
     <div id="leftbar"></div>
-    <div id="canvas">
-        <h1>Pixel Art Maker</h1>
-        <div id="canvasbox"></div>
-    </div>
-    <div id="rightbar">
-        <div id="dimensions">
-            <input type="range" name="" id="">
-            <div>
-                <div>
-                    <h3>Height: </h3>
-                    <input type="number" name="" id="" min="1" max="300">
-                </div>
-                <div>
-                    <h3>Width: </h3>
-                    <input type="number" name="" id="" min="1" max="300">
-                </div>
+    <div class="container">
+        <h1 class="text-center">Pixel Art Maker</h1>
+        <section class="d-flex">
+            <div id="canvas">
+                <div id="canvasbox"></div>
             </div>
-            <button>Draw</button>
-        </div>
-        <div id="rowcol">
-            <h4>Row: 22 Col:53</h4>
-        </div>
-        <div id="colors">
-            <h4>Colors</h4>
-        </div>
-        <div id="animation">
-            <input type="reset" value="0">
-        </div>
-        <div id="frame">
+            <div id="rightbar">
+                <div id="dimensions">
+                    <input type="range" name="" id="">
+                    <div>
+                        <div>
+                            <h3>Height: </h3>
+                            <input type="number" name="" id="" min="1" max="300">
+                        </div>
+                        <div>
+                            <h3>Width: </h3>
+                            <input type="number" name="" id="" min="1" max="300">
+                        </div>
+                    </div>
+                    <button>Draw</button>
+                </div>
+                <div id="rowcol">
+                    <h4>Row: 22 Col:53</h4>
+                </div>
+                <div id="colors">
+                    <h4>Colors</h4>
+                </div>
+                <div id="animation">
+                    <input type="reset" value="0">
+                </div>
+                <div id="frame">
 
-        </div>
-        <div id="themes">
+                </div>
+                <div id="themes">
 
-        </div>
-        <div id="saved"></div>
+                </div>
+                <div id="saved"></div>
+            </div>
+        </section>
     </div>
     <script src="./assets/js/view/leftbar.js"></script>
+    <script src="./assets/js/view/canvas.js"></script>
 </body>
 
 </html>

@@ -7,6 +7,18 @@ body {
   text-align: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
 #leftbar {
   background-color: Gray;
   width: 60px;
@@ -37,7 +49,6 @@ ul {
 }
 
 ul li {
-  /* flex: 1; */
   height: 75px;
   width: 100%;
   text-align: center;
@@ -54,11 +65,9 @@ ul li:hover {
   content: "\f1fb";
 }
 
-/* tooltip */
+/* tooltip*/
 .leftbar_icon {
   position: relative;
-  /* display: inline-block; */
-  /* border-bottom: 1px dotted black; */
 }
 .leftbar_icon .tooltiptext {
   visibility: hidden;
@@ -83,9 +92,43 @@ ul li:hover {
   content: " ";
   position: absolute;
   top: 50%;
-  right: 102%; /* To the left of the tooltip */
+  right: 102%;
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: transparent black transparent transparent;
+}
+/* tooltip*/
+
+#canvas {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  border: 2px solid #dddddd;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvasbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  border: 1px solid #eeeeee;
+}
+
+.col:hover {
+  cursor: pointer;
 }
