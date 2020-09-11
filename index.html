@@ -18,41 +18,51 @@
                 <div id="canvasbox"></div>
             </div>
             <div id="rightbar">
-                <div id="dimensions">
-                    <input type="range" name="" id="">
-                    <div>
+                <div id="dimensions" class="borderbottom">
+                    <input type="range" name="" value="100" id="">
+                    <div class="d-flex">
                         <div>
-                            <h3>Height: </h3>
-                            <input type="number" name="" id="" min="1" max="300">
+                            <span>Height: </span>
+                            <input type="number" value="30" name="" id="" min="1" max="300">
                         </div>
                         <div>
-                            <h3>Width: </h3>
-                            <input type="number" name="" id="" min="1" max="300">
+                            <span>Width: </span>
+                            <input type="number" value="50" name="" id="" min="1" max="300">
                         </div>
                     </div>
                     <button>Draw</button>
                 </div>
-                <div id="rowcol">
-                    <h4>Row: 22 Col:53</h4>
+                <div id="rowcol" class="borderbottom">
+                    <span>Row: 22 Col:43</span>
                 </div>
-                <div id="colors">
-                    <h4>Colors</h4>
+                <div id="colors" class="borderbottom">
+                    <span>Colors</span>
+                    <div class="colors">
+                    </div>
+                    <input type="color" name="" id="">
+                    <button>Random Color</button>
                 </div>
-                <div id="animation">
+                <div id="animation" class="borderbottom">
+                    <span>Animation</span>
                     <input type="reset" value="0">
                 </div>
-                <div id="frame">
-
+                <div id="frame" class="borderbottom">
+                    <span>Frame</span>
                 </div>
-                <div id="themes">
-
+                <div id="themes" class="borderbottom">
+                    <span>Themes</span>
+                    <div class="themes">
+                    </div>
                 </div>
-                <div id="saved"></div>
+                <div id="saved">
+                    <span>Saved Frames</span>
+                </div>
             </div>
         </section>
     </div>
     <script src="./assets/js/view/leftbar.js"></script>
     <script src="./assets/js/view/canvas.js"></script>
+    <script src="./assets/js/view/rightbar.js"></script>
 </body>
 
 </html>

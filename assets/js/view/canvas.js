@@ -44,7 +44,7 @@ Board.prototype.bindEvents = function () {
   this.el.addEventListener("mouseover", () => {
     let rowcol = event.target.getAttribute("data-attr").split(".");
     if (this.drag) event.target.style.background = this.color;
-    this.dimenEl.innerHTML = `<h4>Row: ${rowcol[0]} Col: ${rowcol[1]}</h4>`;
+    this.dimenEl.innerHTML = `<span>Row: ${rowcol[0]} Col: ${rowcol[1]}</span>`;
   });
 };
 new Board("#canvasbox", 30, 50, "#rowcol");

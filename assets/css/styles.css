@@ -17,6 +17,7 @@ body {
 
 .d-flex {
   display: flex;
+  justify-content: space-evenly;
 }
 
 #leftbar {
@@ -28,7 +29,7 @@ body {
 }
 
 #canvas {
-  flex: 4;
+  flex: 6;
 }
 
 #rightbar {
@@ -131,4 +132,34 @@ ul li:hover {
 
 .col:hover {
   cursor: pointer;
+}
+
+#rightbar {
+  border: 2px solid #dddddd;
+  height: auto;
+  width: fit-content;
+  margin: 15px 10px 15px 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.borderbottom {
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+.colors,
+.themes {
+  display: flex;
+  justify-content: center;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  /* flex: 1; */
+  border-radius: 10px;
 }
